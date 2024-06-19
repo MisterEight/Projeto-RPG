@@ -3,6 +3,7 @@
 #include "creditos.h"
 #include "opcaoInvalida.h"
 #include "limpaTerminal.h"
+#include "iniciaJogo.h"
 //Bora fazer esse jogo ;/
 
 void menuInicial(){
@@ -19,7 +20,8 @@ void menuInicial(){
     switch (opcao)
     {
     case 1:
-        //iniciaAventura();
+        limpaTerminal();
+        iniciaJogo();
         break;
     case 2:
         //carregaPersonagem();
