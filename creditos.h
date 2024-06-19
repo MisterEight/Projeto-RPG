@@ -4,8 +4,8 @@ void mostraCreditos() {
     int opcao;
     printf("Criadores:"
     "\nLeonardo Alcântara"
-    "\nIsaque"
-    "\nIsrael");
+    "\nIsaque Nunes"
+    "\nIsrael Nunes"); 
     printf("\n1 - Voltar: ");
     scanf("%d", &opcao);
 
