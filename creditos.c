@@ -3,6 +3,8 @@
 #include "creditos.h"
 #include "opcaoInvalida.h"
 
+void opcaoErrada();
+
 void mostraCreditos() {
     int opcao;
     printf("Criadores:"

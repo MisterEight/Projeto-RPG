@@ -2,8 +2,12 @@
 #include <stdlib.h>
 #include "creditos.h"
 #include "opcaoInvalida.h"
-
+#include "limpaTerminal.h"
 //Bora fazer esse jogo ;/
+
+void opcaoErrada();
+void limpaTerminal();
+
 
 void menuInicial(){
     int opcao;
@@ -25,9 +29,9 @@ void menuInicial(){
         //carregaPersonagem();
         break;
     case 3:
-        system("cls");
+        limpaTerminal();
         mostraCreditos();
-        system("cls");
+        limpaTerminal();
         menuInicial();
         break;
     case 4:
@@ -39,8 +43,12 @@ void menuInicial(){
 }
 
 int main() {
-    system("chcp 65001");
-    system("cls");
+    #ifdef _WIN32 
+        system("chcp 65001");
+        limpaTerminal();
+    #elif __linux__
+        limpaTerminal();
+    #endif
 
     menuInicial();
 }
