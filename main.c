@@ -5,10 +5,6 @@
 #include "limpaTerminal.h"
 //Bora fazer esse jogo ;/
 
-void opcaoErrada();
-void limpaTerminal();
-
-
 void menuInicial(){
     int opcao;
 

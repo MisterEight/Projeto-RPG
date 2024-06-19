@@ -1,6 +1,10 @@
-#ifndef OPCAO_INVALIDA_H
-#define OPCAO_INVALIDA_H
+#include <stdlib.h>
 
-void limpaTerminal();
 
-#endif /* OPCAO_INVALIDA_H */
+void limpaTerminal() {
+    #ifdef _WIN32
+        system("cls");
+    #elif __linux__
+        system("clear");
+    #endif
+}

@@ -1,6 +1,10 @@
-#ifndef OPCAO_INVALIDA_H
-#define OPCAO_INVALIDA_H
+// opcaoInvalida.c
+#include <stdio.h>
+#include <stdlib.h>
 
-void opcaoErrada();
+void limpaTerminal();
 
-#endif /* OPCAO_INVALIDA_H */
+void opcaoErrada() {
+    limpaTerminal();
+    printf("Opção inválida!\n");
+}
