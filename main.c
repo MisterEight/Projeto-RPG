@@ -1,14 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "creditos.h"
 #include "opcaoInvalida.h"
 #include "limpaTerminal.h"
 #include "iniciaJogo.h"
+#include "limpaBuffer.h"
+#include "criaPersonagem.h"
 //Bora fazer esse jogo ;/
 
 void menuInicial(){
     int opcao;
-
+    do
+    {
     printf("A lenda do herói!"
     "\n1 - Iniciar Aventura"
     "\n2 - Carregar Aventura"
@@ -38,6 +42,9 @@ void menuInicial(){
         opcaoErrada();
         break;
     }
+    } while (opcao < 1 || opcao > 4);
+    
+
 }
 
 int main() {
