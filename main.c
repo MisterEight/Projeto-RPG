@@ -7,6 +7,7 @@
 #include "iniciaJogo.h"
 #include "limpaBuffer.h"
 #include "criaPersonagem.h"
+#include "carregaPersonagem.h"
 //Bora fazer esse jogo ;/
 
 void menuInicial(){
