@@ -8,18 +8,20 @@
 #include "limpaBuffer.h"
 #include "criaPersonagem.h"
 #include "carregaPersonagem.h"
+#include "salvaPersonagem.h"
 //Bora fazer esse jogo ;/
 
 void menuInicial(){
     int opcao;
+    printf("Carregando...");
     do
     {
-    printf("A lenda do herói!"
-    "\n1 - Iniciar Aventura"
-    "\n2 - Carregar Aventura"
-    "\n3 - Créditos"
-    "\n4 - Sair do jogo."
-    "\nOpção: ");
+    printf("\nA lenda do herói!");
+    printf("\n1 - Iniciar Aventura");
+    printf("\n2 - Carregar Aventura");
+    printf("\n3 - Créditos");
+    printf("\n4 - Sair do jogo.");
+    printf("\nOpção: ");
 
     scanf("%d", &opcao);
     switch (opcao)
@@ -55,6 +57,6 @@ int main() {
     #elif __linux__
         limpaTerminal();
     #endif
-
+    
     menuInicial();
 }
