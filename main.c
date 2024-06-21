@@ -29,7 +29,7 @@ void menuInicial(){
         iniciaJogo();
         break;
     case 2:
-        //carregaPersonagem();
+        carregaPersonagem();
         break;
     case 3:
         limpaTerminal();
