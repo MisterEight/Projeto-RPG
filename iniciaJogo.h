@@ -1,10 +1,10 @@
 void limpaTerminal();
 void menuInicial();
 void opcaoErrada();
-void limparBuffer();
+void limpaBuffer();
 void criaPersonagem();
 void iniciaJogo();
-void carregaPersonagem();
+struct ficha_personagem carregaPersonagem();
 
 void escolhaClasseNome() {
     int opcao_classe;
@@ -44,14 +44,14 @@ void escolhaClasseNome() {
         }
     } while (opcao_classe < 1 || opcao_classe > 4);
     
-    limparBuffer();
+    limpaBuffer();
 
     printf("\nDigite um nome em até 50 caracteres: ");
     fgets(nome_personagem, sizeof(nome_personagem), stdin);
-    printf("\nSeu nome é: %s", nome_personagem);
+    limpaTerminal();
+    printf("Seu nome é: %s", nome_personagem);
 
     criaPersonagem(opcao_classe, nome_personagem);
-    carregaPersonagem();
 }
 
 void iniciaJogo() {

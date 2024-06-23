@@ -9,11 +9,12 @@
 #include "criaPersonagem.h"
 #include "carregaPersonagem.h"
 #include "salvaPersonagem.h"
+#include "iniciaHistoria.h"
+#include "continuaHistoria.h"
 //Bora fazer esse jogo ;/
 
 void menuInicial(){
     int opcao;
-    printf("Carregando...");
     do
     {
     printf("\nA lenda do herói!");

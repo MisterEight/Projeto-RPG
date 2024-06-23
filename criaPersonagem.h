@@ -12,6 +12,7 @@
 };
 
 void salvaPersonagem();
+void iniciaHistoria();
 
     void criaPersonagem(int classe_escolhida, char nome[]) {
         struct ficha_personagem personagem;
@@ -52,6 +53,8 @@ void salvaPersonagem();
         salvaPersonagem(personagem);
 
         printf("Personagem criado com sucesso!");
+
+        iniciaHistoria();
     }
 
  
