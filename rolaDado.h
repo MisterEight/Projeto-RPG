@@ -1,4 +1,4 @@
-int rolar_d6()
+int rolaDado()
 {
 return (rand() % 6) + 1;
 }
