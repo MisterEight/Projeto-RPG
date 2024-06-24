@@ -2,6 +2,7 @@ void limpaTerminal();
 void continuaHistoria();
 int carregaHistoria();
 void salvaHistoria();
+void viajaMapas();
 struct ficha_personagem carregaPersonagem();
 
 void iniciaHistoria() {
@@ -14,4 +15,10 @@ void iniciaHistoria() {
 
     continuaHistoria();
 
+    limpaTerminal();
+    printf("\n Você levanta, sabendo que mesmo não sabendo quem é ainda precisar luta contra as forças do mal!");
+
+    continuaHistoria();
+
+    viajaMapas();
 }

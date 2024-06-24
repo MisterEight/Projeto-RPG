@@ -52,7 +52,6 @@ void escolhaClasseNome() {
     
     limpaTerminal();
     printf("Seu nome é: %s", nome_personagem);
-
     criaPersonagem(opcao_classe, nome_personagem);
 }
 

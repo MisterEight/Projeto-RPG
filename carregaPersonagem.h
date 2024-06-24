@@ -5,8 +5,9 @@ struct ficha_personagem carregaPersonagem() {
 
     arquivo_personagem = fopen("arquivo_personagem.txt", "r");
 
-    fgets(personagem.nome_personagem,"%s", arquivo_personagem);
-    fgets(personagem.classe,"%s", arquivo_personagem);
+    fgets(personagem.nome_personagem, sizeof(personagem.nome_personagem), arquivo_personagem);
+    fgets(personagem.classe, sizeof(personagem.classe), arquivo_personagem);
+    personagem.classe[strcspn(personagem.classe, "\n")] = '\0';
     fscanf(arquivo_personagem,"%d", &personagem.pontos_de_vida);
     fscanf(arquivo_personagem,"%d", &personagem.ataque);
     fscanf(arquivo_personagem,"%d", &personagem.defesa);
@@ -15,6 +16,5 @@ struct ficha_personagem carregaPersonagem() {
     fscanf(arquivo_personagem,"%d", &personagem.nivel);
     fclose(arquivo_personagem);
 
-    printf("Você carregou o personagem: %s", personagem.nome_personagem);
-    printf("Ele é um: %s", personagem.classe);
+    return personagem;
 }
