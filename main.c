@@ -11,10 +11,9 @@
 #include "salvaPersonagem.h"
 #include "iniciaHistoria.h"
 #include "continuaHistoria.h"
-#include "carregaHistoria.h"
-#include "salvaHistoria.h"
-#include "historiaFinal.h"
-#include "jogaHistoria.h"
+#include "criar_monstro.h"
+#include "rola_ataque.h"
+#include "rola_dado.h"
 //Bora fazer esse jogo ;/
 
 void menuInicial(){
