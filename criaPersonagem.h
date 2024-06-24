@@ -27,15 +27,13 @@ void iniciaHistoria();
         case 1:
             strcpy(personagem.classe, "Guerreiro");
             personagem.pontos_de_vida = 20;
-            personagem.pontos_de_mana = 2;
             personagem.defesa = 3;
             personagem.ataque = 1;
             personagem.velocidade = 1;
             break;
         case 2:
-            strcpy(personagem.classe, "Mago");
+            strcpy(personagem.classe, "Ladino");
             personagem.pontos_de_vida = 10;
-            personagem.pontos_de_mana = 6;
             personagem.defesa = 1;
             personagem.ataque = 3;
             personagem.velocidade = 2;
@@ -43,7 +41,6 @@ void iniciaHistoria();
         case 3:
             strcpy(personagem.classe, "Arqueiro");
             personagem.pontos_de_vida = 15;
-            personagem.pontos_de_mana = 4;
             personagem.defesa = 2;
             personagem.ataque = 2;
             personagem.velocidade = 3;

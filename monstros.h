@@ -15,7 +15,7 @@ int xp_Monstro(Monstro monstro) {
 // Esta função daqui cria nosso bom e velho goblin
 Monstro criarGoblin()
 {
-    Monstro goblin = {"Goblin",30,10,5,15,20,1};
+    Monstro goblin = {"Goblin",20,1,5,15,20,1};
     return goblin;
 }
 //Esqueletin gerado
