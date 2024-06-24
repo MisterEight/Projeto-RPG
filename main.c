@@ -14,8 +14,18 @@
 #include "criar_monstro.h"
 #include "salvaHistoria.h"
 #include "carregaHistoria.h"
+<<<<<<< HEAD
+#include "historiaFinal.h"
+#include "jogaHistoria.h"
+#include "criaInventario.h"
+#include "salvaInventario.h"
+=======
 #include "viajaMapas.h"
+<<<<<<< HEAD
 #include "iniciaBatalha.h"
+=======
+>>>>>>> da3dbd12de11f2bb283908e1ccd0bf7ab3748fef
+>>>>>>> 9ac6ae2cb00b73c33325ae7e5ef2b38e7456030f
 //#include "rola_ataque.h"
 //#include "rola_dado.h"
 //Bora fazer esse jogo ;/

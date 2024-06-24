@@ -1,20 +1,44 @@
-typedef struct {
+struct Arma{
     char nome[50];
-    int dano;
-} Arma;
+    int ataque;
+};
 
-typedef struct {
-    int ouro;
-    Arma* arma;
-} Inventario;
+struct Armadura{
+    char nome[50];
+    int defesa;
+};
 
-Inventario criaInventario(int ouro, Arma* arma);
-Arma criaArma(const char* nome, int dano);
 
-    Arma espada_longa = criaArma("Espada Longa", 2);
-    Arma espada_superior = criaArma("Espada Superior", 4);
-    Arma adaga = criaArma("Adaga", 1);
-    Arma adaga_superior = criaArma("Adaga Superior", 3);
-    Arma arco = criaArma("Arco", 2);
-    Arma arco_superior = criaArma("Arco Superior", 3);
 
+
+
+void criaInventario(int classe_escolhida) {
+    struct Arma arma;
+    struct Armadura armadura;
+
+    switch (classe_escolhida) {
+        case 1:
+            strcpy(arma.nome, "Espada Longa");
+            arma.ataque = 2;
+            strcpy(armadura.nome, "Armadura de placas");
+            armadura.defesa = 3; // Ajuste de defesa
+            break;
+        case 2:
+            strcpy(arma.nome, "Adaga");
+            arma.ataque = 1;
+            strcpy(armadura.nome, "Armadura de couro");
+            armadura.defesa = 2;
+            break;
+        case 3:
+            strcpy(arma.nome, "Arco longo");
+            arma.ataque = 2;
+            strcpy(armadura.nome, "Armadura de peles");
+            armadura.defesa = 1;
+            break;
+        default:
+            printf("Classe inválida!\n");
+            return;
+    }
+
+    salvaInventario(arma, armadura);
+}
