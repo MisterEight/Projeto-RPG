@@ -12,11 +12,12 @@ void escolhaClasseNome() {
 
     /*TODO: precisa criar um struct para guardar as informações para a função
     criaPersonagem();*/
+    limpaBuffer();
     do
     {
         printf("Escolha sua classe: "
         "\n1 - Guerreiro"
-        "\n2 - Mago"
+        "\n2 - Ladino"
         "\n3 - Arqueiro"
         "\n4 - Voltar"
         "\nOpção: ");
@@ -30,7 +31,7 @@ void escolhaClasseNome() {
                 printf("Você é um Guerreiro!");
                 break;
             case 2:
-                printf("Você é um Mago!");
+                printf("Você é um Ladino!");
                 break;
             case 3:
                 printf("Você é um Arqueiro!");
@@ -48,6 +49,7 @@ void escolhaClasseNome() {
 
     printf("\nDigite um nome em até 50 caracteres: ");
     fgets(nome_personagem, sizeof(nome_personagem), stdin);
+    
     limpaTerminal();
     printf("Seu nome é: %s", nome_personagem);
 

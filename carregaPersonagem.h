@@ -3,12 +3,11 @@ struct ficha_personagem carregaPersonagem() {
 
     FILE * arquivo_personagem;
 
-    arquivo_personagem = fospen("arquivo_personagem.txt", "r");
+    arquivo_personagem = fopen("arquivo_personagem.txt", "r");
 
-    fgets(personagem.nome_personagem,sizeof(personagem), arquivo_personagem);
-    fgets(personagem.classe,sizeof(personagem), arquivo_personagem);
+    fgets(personagem.nome_personagem,"%s", arquivo_personagem);
+    fgets(personagem.classe,"%s", arquivo_personagem);
     fscanf(arquivo_personagem,"%d", &personagem.pontos_de_vida);
-    fscanf(arquivo_personagem,"%d", &personagem.pontos_de_mana);
     fscanf(arquivo_personagem,"%d", &personagem.ataque);
     fscanf(arquivo_personagem,"%d", &personagem.defesa);
     fscanf(arquivo_personagem,"%d", &personagem.velocidade);

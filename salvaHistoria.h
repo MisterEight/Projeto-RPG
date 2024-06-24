@@ -1,4 +1,4 @@
-int salvaHistoria(int ponto_de_salvamento){
+void salvaHistoria(int ponto_de_salvamento){
     
     FILE *arquivo_historia;
 
