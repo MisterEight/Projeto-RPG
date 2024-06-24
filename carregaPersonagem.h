@@ -8,7 +8,6 @@ struct ficha_personagem carregaPersonagem() {
     fgets(personagem.nome_personagem,sizeof(personagem), arquivo_personagem);
     fgets(personagem.classe,sizeof(personagem), arquivo_personagem);
     fscanf(arquivo_personagem,"%d", &personagem.pontos_de_vida);
-    fscanf(arquivo_personagem,"%d", &personagem.pontos_de_mana);
     fscanf(arquivo_personagem,"%d", &personagem.ataque);
     fscanf(arquivo_personagem,"%d", &personagem.defesa);
     fscanf(arquivo_personagem,"%d", &personagem.velocidade);

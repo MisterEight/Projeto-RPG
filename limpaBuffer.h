@@ -1,3 +1,6 @@
 void limpaBuffer() {
-    fflush(stdin);
+ int c;
+    do {
+        c = getchar();
+    } while (c != '\n' && c != EOF);
 }

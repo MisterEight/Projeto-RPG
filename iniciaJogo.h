@@ -16,7 +16,7 @@ void escolhaClasseNome() {
     {
         printf("Escolha sua classe: "
         "\n1 - Guerreiro"
-        "\n2 - Mago"
+        "\n2 - Ladino"
         "\n3 - Arqueiro"
         "\n4 - Voltar"
         "\nOpção: ");
