@@ -3,7 +3,6 @@
     char nome_personagem[50];
     char classe[20];
     int pontos_de_vida;
-    int pontos_de_mana;     
     int ataque;
     int defesa;
     int velocidade;
