@@ -14,6 +14,7 @@ void salvaPersonagem();
 void iniciaHistoria();
 void salvaHistoria();
 void criaInventario();
+void salvaInventario();
 
     void criaPersonagem(int classe_escolhida, char nome[]) {
         struct ficha_personagem personagem;
