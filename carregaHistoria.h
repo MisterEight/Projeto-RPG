@@ -3,6 +3,7 @@ void jogaHistoria();
 void historiaFinal();
 void menuInicial();
 void limpaTerminal();
+void viajaMapas();
 
 int carregaHistoria() {
     int ponto_de_controle = 0;
@@ -27,10 +28,7 @@ int carregaHistoria() {
         iniciaHistoria();
         break;
     case 2:
-        jogaHistoria();
-        break;
-    case 3:
-        historiaFinal();
+        viajaMapas();
         break;
     }
 

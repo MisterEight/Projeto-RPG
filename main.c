@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <termios.h>
-#include <unistd.h>
 #include "creditos.h"
 #include "opcaoInvalida.h"
 #include "limpaTerminal.h"
@@ -16,10 +14,14 @@
 #include "criar_monstro.h"
 #include "salvaHistoria.h"
 #include "carregaHistoria.h"
+<<<<<<< HEAD
 #include "historiaFinal.h"
 #include "jogaHistoria.h"
 #include "criaInventario.h"
 #include "salvaInventario.h"
+=======
+#include "viajaMapas.h"
+>>>>>>> da3dbd12de11f2bb283908e1ccd0bf7ab3748fef
 //#include "rola_ataque.h"
 //#include "rola_dado.h"
 //Bora fazer esse jogo ;/
