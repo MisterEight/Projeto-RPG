@@ -23,14 +23,17 @@ void viajaMapas() {
     {
     case 1:
         limpaTerminal();
+        sistemaBatalha();
         printf("\nVocê foi para a cidade!");
         break;
     case 2:
         limpaTerminal();
+        sistemaBatalha();
         printf("\nVocê foi para a floresta!");
         break;
     case 3:
         limpaTerminal();
+        sistemaBatalha();
         printf("\nVocê foi para a montanha!");
         break;
     case 4:

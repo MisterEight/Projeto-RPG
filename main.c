@@ -15,6 +15,7 @@
 #include "salvaHistoria.h"
 #include "carregaHistoria.h"
 #include "viajaMapas.h"
+#include "iniciaBatalha.h"
 //#include "rola_ataque.h"
 //#include "rola_dado.h"
 //Bora fazer esse jogo ;/
