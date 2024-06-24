@@ -18,6 +18,8 @@
 #include "carregaHistoria.h"
 #include "historiaFinal.h"
 #include "jogaHistoria.h"
+#include "criaInventario.h"
+#include "salvaInventario.h"
 //#include "rola_ataque.h"
 //#include "rola_dado.h"
 //Bora fazer esse jogo ;/

@@ -13,6 +13,7 @@
 void salvaPersonagem();
 void iniciaHistoria();
 void salvaHistoria();
+void criaInventario();
 
     void criaPersonagem(int classe_escolhida, char nome[]) {
         struct ficha_personagem personagem;
@@ -30,6 +31,7 @@ void salvaHistoria();
             personagem.defesa = 3;
             personagem.ataque = 1;
             personagem.velocidade = 1;
+            criaInventario(classe_escolhida);
             break;
         case 2:
             strcpy(personagem.classe, "Ladino");
@@ -37,6 +39,7 @@ void salvaHistoria();
             personagem.defesa = 1;
             personagem.ataque = 3;
             personagem.velocidade = 2;
+            criaInventario(classe_escolhida);
             break;
         case 3:
             strcpy(personagem.classe, "Arqueiro");
@@ -44,6 +47,7 @@ void salvaHistoria();
             personagem.defesa = 2;
             personagem.ataque = 2;
             personagem.velocidade = 3;
+            criaInventario(classe_escolhida);
             break;
         }
 
