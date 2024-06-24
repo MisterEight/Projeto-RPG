@@ -15,6 +15,7 @@ int xp_Monstro(Monstro monstro) {
 // Esta função daqui cria nosso bom e velho goblin
 Monstro criarGoblin()
 {
+    //Tem mudar os valores dos atributos dos monstros
     Monstro goblin = {"Goblin",30,10,5,15,20,1};
     return goblin;
 }

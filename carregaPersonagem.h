@@ -3,7 +3,7 @@ struct ficha_personagem carregaPersonagem() {
 
     FILE * arquivo_personagem;
 
-    arquivo_personagem = fopen("arquivo_personagem.txt", "r");
+    arquivo_personagem = fospen("arquivo_personagem.txt", "r");
 
     fgets(personagem.nome_personagem,sizeof(personagem), arquivo_personagem);
     fgets(personagem.classe,sizeof(personagem), arquivo_personagem);
@@ -18,6 +18,4 @@ struct ficha_personagem carregaPersonagem() {
 
     printf("Você carregou o personagem: %s", personagem.nome_personagem);
     printf("Ele é um: %s", personagem.classe);
-
-    return personagem;
 }

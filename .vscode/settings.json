@@ -2,6 +2,7 @@
     "files.associations": {
         "opcaoinvalida.h": "c",
         "salvapersonagem.h": "c",
-        "creditos.h": "c"
+        "creditos.h": "c",
+        "salvahistoria.h": "c"
     }
 }
