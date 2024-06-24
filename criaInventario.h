@@ -10,42 +10,35 @@ struct Armadura{
 
 
 
-void criaInventario(int classe_escolhida){
+
+
+void criaInventario(int classe_escolhida) {
     struct Arma arma;
-    switch (classe_escolhida)
-    {
-    case 1:
-        strcpy(arma.nome, "Espada Longa");
-        arma.ataque = 2;
-        break;
-    case 2:
-        strcpy(arma.nome, "Adaga");
-        arma.ataque = 1;
-        break;
-    case 3:
-        strcpy(arma.nome, "Arco longo");
-        arma.ataque = 2;
-        break;
-    default:
-        break;
-    }
-
     struct Armadura armadura;
-    switch (classe_escolhida)
-    {
-    case 1:
-        strcpy(armadura.nome, "Armadura de placas");
-        break;
-    case 2:
-        strcpy(armadura.nome, "Armadura de couro");
-        armadura.defesa = 1;
-        break;
-    case 3:
-        strcpy(armadura.nome, "Armadura de peles");
-        armadura.defesa = 2;
-        break;
-    default:
-        break;
+
+    switch (classe_escolhida) {
+        case 1:
+            strcpy(arma.nome, "Espada Longa");
+            arma.ataque = 2;
+            strcpy(armadura.nome, "Armadura de placas");
+            armadura.defesa = 3; // Ajuste de defesa
+            break;
+        case 2:
+            strcpy(arma.nome, "Adaga");
+            arma.ataque = 1;
+            strcpy(armadura.nome, "Armadura de couro");
+            armadura.defesa = 2;
+            break;
+        case 3:
+            strcpy(arma.nome, "Arco longo");
+            arma.ataque = 2;
+            strcpy(armadura.nome, "Armadura de peles");
+            armadura.defesa = 1;
+            break;
+        default:
+            printf("Classe inválida!\n");
+            return;
     }
 
+    salvaInventario(arma, armadura);
 }
